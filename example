@@ -1,0 +1,13 @@
+import pyautogui as py
+
+for i in range(3):
+    
+    py.moveTo(1448,33)
+    py.click(1448,33)
+    py.hotkey('ctrl','c')
+    py.press('down')
+
+    py.moveTo(188,899)
+    py.click(188,899)
+    py.hotkey('ctrl','v')
+    py.press('enter')
