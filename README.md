@@ -7,3 +7,7 @@
 
 - สามารถดูการใช้ library นี้ได้จาก
 >https://pyautogui.readthedocs.io/en/latest/quickstart.html#keyboard-functions
+
+>หา position mouse 
+>pyautogui.position()  # current mouse x and y
+(968, 56)
