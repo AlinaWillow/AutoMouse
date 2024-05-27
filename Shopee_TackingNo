@@ -1,0 +1,40 @@
+import pyautogui as py
+
+def openinternet():
+    py.click(699,1056) #Open line program
+
+def openexcel():
+    py.click(765,1064)
+    
+def openline():
+    py.click(838,1053) #Open line program
+    py.moveTo(1421,785)
+    py.click(1421,785) #Click crop tool
+
+def scantext():
+    #Click blank space at scan text
+    py.moveTo(1411,234,2)
+    py.click(1411,234)
+    py.hotkey('ctrl','a') #Press Ctrl A
+    py.hotkey('ctrl','c') #Press Ctrl C
+    py.click(1704,90) #Close window
+
+for x in range(2):
+    
+    openinternet()
+    openline()
+    #Drag TH2460144372681
+    py.click(1049,370)
+    py.dragTo(1333, 414, 1, button='left')
+    #Click scan text
+    py.click(1008,450)
+    scantext()
+    #Input Tracking No to Excel
+    openexcel()
+    '''py.click(1047,325) #Tracking No
+    '''
+    py.hotkey('ctrl','v')
+    py.press('enter')
+
+    openinternet()
+    py.press('right')
